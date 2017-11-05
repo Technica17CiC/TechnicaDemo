@@ -3,6 +3,8 @@
 <title>Crisis Connect: Together</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jQuery.js" type="text/javascript"></script>
+ <script src="functions.js" type="text/javascript"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
@@ -31,14 +33,12 @@ body, html {height: 100%}
 <center>
 <form action="/my-handling-form-page" method="post">
     <div>
-        <label for="zipcode"><b>Zipcode:</b></label>
-        <input type="text" id="zip" name="zip_code">
+       <input id="address" type="text" />
+		<input type="button" value="Enter" onclick="addressfunc()" />
     </div>
 
 </form><br>
-<div class="button">
-  <button type="submit">Find</button>
-</div><br><br>
+<br><br>
 
 
 Currently a moderator or First Responder?
@@ -62,6 +62,5 @@ Currently a moderator or First Responder?
     Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
   </div>
 </div>
-
 </body>
 </html>
